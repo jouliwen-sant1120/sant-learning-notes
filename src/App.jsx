@@ -34,7 +34,7 @@ function App() {
         </p>
 
         <a href="#about" className="btn-primary">
-  開始認識我
+  歡迎進入我的學習世界
 </a>
       </section>
 
