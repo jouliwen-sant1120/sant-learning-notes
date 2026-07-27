@@ -1,0 +1,222 @@
+# 20260727-Day012_React專案架構建立與元件化開始
+
+---
+
+# 今日目標
+
+正式由 Blueprint 規劃階段進入 React 網站開發。
+
+今天不追求畫面效果，也不修改 Prototype 首頁，而是建立網站未來長期維護所需的 React 專案架構。
+
+---
+
+# 一、專案開發正式進入新階段
+
+目前網站開發流程：
+
+Phase 1
+網站定位
+
+✔ 完成
+
+↓
+
+Phase 2
+Blueprint 規劃
+
+✔ 完成
+
+↓
+
+Phase 3
+React 開發
+
+【Day012 正式開始】
+
+---
+
+# 二、建立 React 專案架構
+
+於 src 建立新的目錄：
+
+src
+
+├── components
+
+├── pages
+
+├── styles
+
+└── data
+
+目的：
+
+建立適合中大型網站維護的資料夾架構。
+
+---
+
+# 三、建立網站核心 Component
+
+完成建立：
+
+- Navbar
+- Hero
+- About
+- LearningMap
+- Footer
+
+每個 Component 採用獨立資料夾管理。
+
+例如：
+
+components
+
+└── Hero
+
+  └── Hero.jsx
+
+未來可放入：
+
+- Hero.css
+- heroData.js
+- Hero 圖片
+
+方便集中管理。
+
+---
+
+# 四、建立 Home Page
+
+新增：
+
+pages
+
+└── Home.jsx
+
+Home 的責任：
+
+負責組裝網站首頁。
+
+Home 組合：
+
+- Navbar
+- Hero
+- About
+- LearningMap
+- Footer
+
+建立 React Component 組裝概念。
+
+---
+
+# 五、Prototype 保留策略
+
+目前網站已有第一版 Prototype（App.jsx）。
+
+今日決議：
+
+不直接覆蓋 Prototype。
+
+採用：
+
+「漸進式重構（Refactor）」
+
+策略。
+
+後續將逐步把：
+
+Navbar
+
+↓
+
+Hero
+
+↓
+
+About
+
+↓
+
+LearningMap
+
+↓
+
+Footer
+
+依序由 App.jsx 拆分至各自 Component。
+
+降低修改風險。
+
+保留每次 Commit 的完整性。
+
+---
+
+# 六、本日學習重點
+
+今天真正學到的不是 React 語法。
+
+而是：
+
+React 的 Component（元件）思維。
+
+網站不再由單一 App.jsx 完成。
+
+而是：
+
+App
+
+↓
+
+Home
+
+↓
+
+Components
+
+↓
+
+Navbar
+
+Hero
+
+About
+
+LearningMap
+
+Footer
+
+建立網站積木化概念。
+
+---
+
+# 七、本日結論
+
+Day012 並未開始製作網站畫面。
+
+而是完成：
+
+✓ React 專案架構建立
+
+✓ Component 架構建立
+
+✓ Home Page 建立
+
+✓ React 元件化思維建立
+
+✓ Prototype 保留與 Refactor 策略確認
+
+為後續正式搬移網站內容做好完整準備。
+
+---
+
+# 下一步（Day013）
+
+開始進行：
+
+Prototype → React Component
+
+第一階段：
+
+Navbar 元件拆分與重構。
+
+完成後確認網站仍可正常運作，再持續拆分 Hero、About、LearningMap 與 Footer。
