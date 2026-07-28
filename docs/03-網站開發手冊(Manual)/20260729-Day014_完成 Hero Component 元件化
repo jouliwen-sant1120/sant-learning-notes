@@ -1,0 +1,128 @@
+# Day014｜完成 Hero Component 元件化
+
+日期：2026-07-29
+
+---
+
+# 本期目標
+
+完成首頁 Hero 區塊的 Component 化，讓 App.jsx 持續簡化，建立更清晰的網站架構。
+
+---
+
+# 本期重點
+
+- 完成 Hero Component 建立
+- 將 Hero 從 App.jsx 獨立
+- 建立 App → Hero 的引用關係
+- 網站畫面維持不變
+- 持續建立 React Component 開發模式
+
+---
+
+# 本期完成內容
+
+## 1. 建立 Hero Component
+
+建立：
+
+```
+src/components/Hero/Hero.jsx
+```
+
+將首頁 Hero 區塊搬移至 Hero Component。
+
+---
+
+## 2. App.jsx 引用 Hero
+
+新增：
+
+```jsx
+import Hero from "./components/Hero/Hero";
+```
+
+並於 `<main>` 中使用：
+
+```jsx
+<Hero />
+```
+
+取代原本直接寫在 App.jsx 的 Hero HTML。
+
+---
+
+## 3. 完成第二個 Component 重構
+
+網站首頁 Hero 已成功獨立管理。
+
+目前 Component 完成情況：
+
+```
+App
+├── Navbar      ✅
+├── Hero        ✅
+├── About
+├── LearningMap
+└── Footer
+```
+
+---
+
+## 4. localhost 驗證
+
+啟動：
+
+```bash
+npm run dev
+```
+
+確認：
+
+- Hero 正常顯示
+- 網站畫面與修改前一致
+- Component 引用正常
+
+---
+
+# 本期學習重點
+
+理解 React 的 Component 並不是新增網站功能，
+
+而是將畫面依功能拆分成可重複使用、容易維護的獨立模組。
+
+App.jsx 的角色開始由「撰寫畫面」轉變為「組裝元件」。
+
+---
+
+# 本期心得
+
+今天完成第二個 Component（Hero）的重構。
+
+與 Day013 相比，操作更加熟悉，也確認 Component 化流程已逐漸建立。
+
+網站功能沒有改變，但程式架構更加清楚，後續維護與擴充將更容易。
+
+---
+
+# 下期規劃（Day015）
+
+預計完成：
+
+- About Component
+- App.jsx 持續瘦身
+- localhost 驗收
+- Git Commit
+- GitHub Pages 更新
+
+---
+
+# 專案開發策略
+
+為符合專案時程與個人時間安排，自 Day014 起調整開發方式：
+
+- 以「完成網站」為主要目標
+- React 作為開發工具，而非教學主軸
+- 每期控制約 30 分鐘
+- 由 AI 提供整理好的程式架構
+- 使用者專注於理解、驗證與功能確認
