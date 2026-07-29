@@ -2,6 +2,7 @@ import "./App.css";
 import { resources, results } from "./data";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 function App() {
   return (
     <>
@@ -9,30 +10,6 @@ function App() {
       <Navbar />
       <main>
        
-
-              <section id="about">
-        <h2>關於我</h2>
-
-        <p>
-          我是 <strong>Sant</strong>。
-        </p>
-
-        <p>
-          我相信，把複雜的事情，用最簡單的方式說清楚，
-          讓更多人敢開始、做得到、持續成長。
-        </p>
-
-        <p>我持續分享：</p>
-
-        <ul>
-          <li>AI 應用</li>
-          <li>Power BI</li>
-          <li>Excel</li>
-          <li>工作流程改善</li>
-          <li>持續學習</li>
-        </ul>
-      </section>
-
               <section id="courses">
         <h2>我分享什麼</h2>
 
