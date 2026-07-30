@@ -3,6 +3,7 @@ import { resources, results } from "./data";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
+import LearningMap from "./components/LearningMap/LearningMap";
 function App() {
   return (
     <>
@@ -10,31 +11,7 @@ function App() {
       <Navbar />
       <main>
        
-              <section id="courses">
-        <h2>我分享什麼</h2>
-
-        <div className="card-grid">
-          <div className="card">
-            <h3>🤖 AI 工作應用</h3>
-            <p>分享 AI 工具、工作流程改善與實務應用。</p>
-          </div>
-
-          <div className="card">
-            <h3>📊 Power BI</h3>
-            <p>用資料分析與視覺化，協助做出更好的決策。</p>
-          </div>
-
-          <div className="card">
-            <h3>📈 Excel</h3>
-            <p>提升日常工作效率，讓資料整理更輕鬆。</p>
-          </div>
-
-          <div className="card">
-            <h3>💡 持續學習</h3>
-            <p>分享學習方法與知識整理，陪伴一起成長。</p>
-          </div>
-        </div>
-      </section>
+              <LearningMap />
 
               <section id="articles">
         <h2>精選文章</h2>
