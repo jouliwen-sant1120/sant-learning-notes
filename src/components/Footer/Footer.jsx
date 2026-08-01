@@ -1,8 +1,9 @@
 function Footer() {
   return (
     <footer>
-      <h1>Footer</h1>
-    </footer>
+        <p>© 2026 Sant 學習成長筆記</p>
+        <p>把複雜，變簡單。</p>
+      </footer>
   );
 }
 
