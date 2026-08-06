@@ -1,3 +1,4 @@
+//import "./Resources.css";
 import { resources } from "../../data";
 function Resources() {
   return (

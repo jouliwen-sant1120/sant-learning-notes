@@ -1,0 +1,9 @@
+#contact h2 {
+  color: #2563eb;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}

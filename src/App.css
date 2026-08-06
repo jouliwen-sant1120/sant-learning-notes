@@ -67,28 +67,6 @@ html {
   background: #1d4ed8;
 }
 
-
-#contact h2 {
-  color: #2563eb;
-}
-
-#contact ul {
-  list-style: none;
-  padding: 0;
-  line-height: 2;
-}
-
-footer {
-  background: #1f2937;
-  color: white;
-  text-align: center;
-  padding: 32px 16px;
-  margin-top: 40px;
-}
-
-footer p {
-  margin: 8px 0;
-}
 /* 手機版 */
 
 @media (max-width: 768px) {
