@@ -1,3 +1,4 @@
+import "./Articles.css";
 function Articles() {
   return (
     <section id="articles">

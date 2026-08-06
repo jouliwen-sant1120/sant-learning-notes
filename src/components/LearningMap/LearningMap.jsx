@@ -1,3 +1,4 @@
+import "./LearningMap.css";
 function LearningMap() {
   return (
     <section id="courses">
