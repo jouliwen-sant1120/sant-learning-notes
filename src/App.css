@@ -92,3 +92,6 @@ html {
     padding: 24px;
   }
 }
+section {
+  scroll-margin-top: 140px;
+}
