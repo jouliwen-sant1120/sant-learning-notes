@@ -1,0 +1,26 @@
+.ai-workflow {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.ai-workflow h1 {
+  margin-bottom: 24px;
+  font-size: 42px;
+  line-height: 1.4;
+}
+
+.ai-workflow .article-intro {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.ai-workflow .article-content {
+  font-size: 18px;
+  line-height: 2;
+}
+
+.ai-workflow .article-content p {
+  margin-bottom: 24px;
+}
