@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <header className="site-header">
@@ -7,8 +8,8 @@ function Navbar() {
       </div>
 
       <nav>
-        <a href="#">首頁</a>
-        <a href="#about">關於我</a>
+        <Link to="/">首頁</Link>
+        <Link to="/about">關於我</Link>
         <a href="#courses">我分享什麼</a>
         <a href="#articles">精選文章</a>
         <a href="#resources">免費資源</a>
