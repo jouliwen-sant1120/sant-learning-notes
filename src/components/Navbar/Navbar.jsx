@@ -10,7 +10,7 @@ function Navbar() {
       <nav>
         <Link to="/">首頁</Link>
         <Link to="/about">關於我</Link>
-        <a href="#courses">我分享什麼</a>
+        <Link to="/courses">我分享什麼</Link>
         <a href="#articles">精選文章</a>
         <a href="#resources">免費資源</a>
         <a href="#results">成果分享</a>

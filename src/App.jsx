@@ -1,3 +1,4 @@
+import Courses from "./pages/Courses";
 import About from "./pages/About";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
@@ -11,6 +12,7 @@ function App() {
       <Route path="/about" element={<About />} />
       <Route path="/" element={<Home />} />
       <Route path="/articles/ai-workflow" element={<AiWorkflow />} />
+      <Route path="/courses" element={<Courses />} />
     </Routes>
   );
 }
