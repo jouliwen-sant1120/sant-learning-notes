@@ -5,14 +5,19 @@ import { Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import AiWorkflow from "./pages/AiWorkflow";
+import Articles from "./pages/Articles";
+import Resources from "./pages/Resources";
+import Results from "./pages/Results";
 
 function App() {
   return (
     <Routes>
       <Route path="/about" element={<About />} />
       <Route path="/" element={<Home />} />
-      <Route path="/articles/ai-workflow" element={<AiWorkflow />} />
+      <Route path="/articles" element={<Articles />} />
       <Route path="/courses" element={<Courses />} />
+      <Route path="/resources" element={<Resources />} />
+      <Route path="/results" element={<Results />} />
     </Routes>
   );
 }

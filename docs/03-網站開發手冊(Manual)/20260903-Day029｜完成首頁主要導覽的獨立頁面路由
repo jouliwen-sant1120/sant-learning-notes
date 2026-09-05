@@ -1,0 +1,169 @@
+20260903-Day029｜完成首頁主要導覽的獨立頁面路由
+
+一、本期目標
+
+完成首頁主要導覽項目的獨立頁面與 React Router
+連結，讓網站從「首頁框架」進一步形成基本的多頁面網站架構。
+
+本期原則：
+
+一天可完成多個小步驟，但每次實際操作只處理一件事。
+
+每完成一個頁面，都要實際測試路由。
+
+「聯絡我」維持首頁框架，不建立獨立頁面。
+
+二、本期完成內容
+
+1. 我分享什麼
+
+檔案：src/pages/Courses.jsx
+
+Route：/courses
+
+Navbar：
+
+<Link to="/courses">我分享什麼</Link>
+
+已實際測試成功。
+
+2. 精選文章
+
+檔案：src/pages/Articles.jsx
+
+Route：/articles
+
+Navbar：
+
+<Link to="/articles">精選文章</Link>
+
+已實際測試成功。
+
+3. 免費資源
+
+檔案：src/pages/Resources.jsx
+
+Route：/resources
+
+Navbar：
+
+<Link to="/resources">免費資源</Link>
+
+已實際測試成功。
+
+4. 成果分享
+
+檔案：src/pages/Results.jsx
+
+Route：/results
+
+Navbar：
+
+<Link to="/results">成果分享</Link>
+
+已確認不再跳到首頁 #results，而是進入獨立 Results 頁面。
+
+三、目前 React Router 路由
+
+App.jsx 目前包含：
+
+<Route path="/about" element={<About />} />
+<Route path="/" element={<Home />} />
+<Route path="/articles" element={<Articles />} />
+<Route path="/courses" element={<Courses />} />
+<Route path="/resources" element={<Resources />} />
+<Route path="/results" element={<Results />} />
+
+目前網站導覽：
+
+Navbar 項目   行為       Route
+
+首頁          回首頁     /
+關於我        獨立頁面   /about
+我分享什麼    獨立頁面   /courses
+精選文章      獨立頁面   /articles
+免費資源      獨立頁面   /resources
+成果分享      獨立頁面   /results
+聯絡我        首頁框架   #contact
+
+四、「聯絡我」的處理決策
+
+本期確認不建立 Contact.jsx。
+
+目前保留：
+
+<a href="#contact">聯絡我</a>
+
+「聯絡我」目前屬於首頁最後的行動區（CTA），不是需要獨立瀏覽的內容分類。
+
+未來若需要完整聯絡表單、Email、合作資訊等功能，再評估是否改為獨立頁面。
+
+五、目前網站架構成果
+
+首頁
+├── Hero
+├── About
+├── Learning Map
+├── 精選文章
+├── 免費資源
+├── 成果分享
+└── 聯絡我
+
+獨立頁面
+├── /about
+├── /courses
+├── /articles
+├── /resources
+└── /results
+
+這代表網站已完成第一階段的「頁面架構與基本路由」。
+
+六、目前開發階段
+
+網站目前已具備：
+
+React 元件化
+
+React Router
+
+多個獨立頁面
+
+Navbar 統一導覽
+
+首頁與獨立內容頁的區分
+
+下一階段將逐步從「有頁面、有路由」進入「頁面真正有內容、共用結構可維護、網站功能逐步完整」。
+
+七、測試紀錄
+
+本期已實際測試：
+
+/courses：成功
+
+/articles：成功
+
+/resources：成功
+
+/results：成功
+
+測試方式：
+
+執行 npm run dev
+
+從首頁 Navbar 點擊對應項目
+
+確認網址與頁面內容
+
+確認是否正確進入獨立頁面
+
+八、Git Commit 建議
+
+feat: 完成主要首頁導覽獨立頁面與路由連結（Day029）
+
+九、本期收工
+
+Day029 完成。
+
+本期重點是把首頁主要導覽正式接上獨立頁面，建立後續網站內容擴充的基礎。
+
+下一期 Day 編號依下一次實際開發日期遞增，不以日曆日期直接當作 Day 編號。
